@@ -11,6 +11,8 @@ Steps:
    $ docker container run -d -p 5000:5000 python:3.10 sleep infinity
 
 2) pip install -r requirements.txt
+   pip install --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+   pip install --no-cache-dir sentence-transformers
 
 3) python3 init_vdb.py ( or init_vdb_trein.py )
 
